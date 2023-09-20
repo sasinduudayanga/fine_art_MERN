@@ -46,9 +46,9 @@ function Navbar() {
             <NavLink className="navbar-brand fw-bolder fs-4 mx-auto" to="/">
             Navbar
           </NavLink>
-          <button className="btn btn-outline-primary ms-auto px-4 rounded-pill">
-          <i className="fa fa-sign-in me-2"></i>Login</button>
-          <button className="btn btn-outline-primary ms-auto px-4 rounded-pill">
+          <NavLink className="btn btn-outline-primary ms-auto px-4 rounded-pill" to="/login">
+          <i className="fa fa-sign-in me-2"></i>Login</NavLink>
+          <button className="btn btn-outline-primary ms-auto px-4 rounded-pill" to= "/register">
           <i className="fa fa-user-plus me-2"></i>Register</button>
           </div>
         </div>
