@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -20,48 +21,35 @@ function Navbar() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <NavLink className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Link
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+                <NavLink className="nav-link" to="/about">
                   About
-                </a>
+                </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <NavLink className="nav-link" to="/services">
                   Services
-                </a>
+                </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <NavLink className="nav-link" to="/contact">
                   Contact
-                </a>
+                </NavLink>
               </li>
 
 
             </ul>
-            <a class="navbar-brand fw-bolder fs-4 mx-auto" href="#">
+            <NavLink className="navbar-brand fw-bolder fs-4 mx-auto" to="/">
             Navbar
-          </a>
-          <button className="btn btn-outline-primary ms-auto px-4 rounded-pill">Login</button>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success " type="submit">
-                Search
-              </button>
-            </form>
+          </NavLink>
+          <button className="btn btn-outline-primary ms-auto px-4 rounded-pill">
+          <i className="fa fa-sign-in me-2"></i>Login</button>
+          <button className="btn btn-outline-primary ms-auto px-4 rounded-pill">
+          <i className="fa fa-user-plus me-2"></i>Register</button>
           </div>
         </div>
       </nav>
