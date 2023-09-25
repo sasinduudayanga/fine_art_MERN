@@ -48,8 +48,8 @@ function Navbar() {
           </NavLink>
           <NavLink className="btn btn-outline-primary ms-auto px-4 rounded-pill" to="/login">
           <i className="fa fa-sign-in me-2"></i>Login</NavLink>
-          <button className="btn btn-outline-primary ms-auto px-4 rounded-pill" to= "/register">
-          <i className="fa fa-user-plus me-2"></i>Register</button>
+          <NavLink className="btn btn-outline-primary ms-auto px-4 rounded-pill" to= "/register">
+          <i className="fa fa-user-plus me-2"></i>Register</NavLink>
           </div>
         </div>
       </nav>
